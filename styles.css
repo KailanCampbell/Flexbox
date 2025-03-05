@@ -58,3 +58,118 @@ p {
   width: 50%;
   line-height: 100px;
 }
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Flexbox
+    </title>
+    <style>
+    p {
+  text-align: left;
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 60px;
+  font-family: Sans-Serif;
+}
+.Flexbox {
+  background-color: #f5e5ba;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: Sans-Serif;
+}
+.Flexbox .item1 {
+  text-align: center;
+  background-image: url("https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg");
+  background-size: contain;
+  width: 50%;
+  line-height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Flexbox .item2 {
+  text-align: center;
+  background-image: url("https://sausagemaker.com/wp-content/uploads/Homemade-French-Fries_8.jpg");
+  background-size: contain;
+  width: 50%;
+  line-height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Flexbox .item3 {
+  text-align: center;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cf/Tumbler_of_cola_with_ice.jpg");
+  background-size: contain;
+  width: 50%;
+  line-height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Grid {
+  background-color: #f5e5ba;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-size: 32px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: Sans-Serif;
+}
+.Grid ._item1 {
+  text-align: center;
+  background-image: url("https://www.butterbeready.com/wp-content/uploads/2022/02/DK6A5249.jpg");
+  background-size: contain;
+  width: 100%;
+  line-height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Grid ._item2 {
+  text-align: center;
+  background-image: url("https://www.simplyrecipes.com/thmb/0NrKQlJ691l6L9tZXpL06uOuWis=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Easy-Greek-Salad-LEAD-2-4601eff771fd4de38f9722e8cafc897a.jpg");
+  background-size: contain;
+  width: 100%;
+  line-height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Grid ._item3 {
+  text-align: center;
+  background-image: url("https://images.themodernproper.com/production/posts/IcedTea_8.jpg?w=960&h=960&q=82&fm=jpg&fit=crop&dm=1716306653&s=e7e37b87126eaafc95ddb53435ba341e");
+  background-size: contain;
+  width: 190%;
+  line-height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+    </style>
+  </head>
+<body>
+  <p>
+    Diner's Classic
+  </p>
+  <br/>
+  <div class="Flexbox">
+    <div class="item1">Burgers</div>
+    <div class="item2">Fries</div>
+    <div class="item3">Soft Drink</div>
+  </div>
+  <br/>
+  <p>
+    Mom's Choice
+  </p>
+  <br/>
+  <div class="Grid">
+    <div class="_item1">Chicken Sandwich</div>
+    <div class="_item2">Salad</div>
+    <div class="_item3">Iced Tea</div>
+  </div>
+</body>
+</html>
